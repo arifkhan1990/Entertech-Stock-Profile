@@ -83,7 +83,7 @@ class SideMenu
                     ],
                     'order-report' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'stock-order-report',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],

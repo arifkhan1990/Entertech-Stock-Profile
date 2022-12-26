@@ -48,6 +48,7 @@ Route::middleware('auth')->group(function() {
 
         // trade route
         Route::get('stock-order', 'stockOrder')->name('stock-order');
+        Route::get('stock-order-report', 'stockOrderReport')->name('stock-order-report');
 
     });
 });

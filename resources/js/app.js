@@ -34,6 +34,7 @@ import "./validation";
 import "./zoom";
 import "./notification";
 import "./tabulator";
+import "./order_report";
 import "./calendar";
 
 /*
@@ -53,6 +54,7 @@ import "./search";
 import "./copy-code";
 import "./show-code";
 import "./side-menu";
+import "./top-menu";
 import "./mobile-menu";
 import "./side-menu-tooltip";
 import "./dark-mode-switcher";

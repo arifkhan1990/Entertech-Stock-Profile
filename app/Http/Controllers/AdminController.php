@@ -71,4 +71,9 @@ class AdminController extends Controller
     {
         return view('pages/admin_panel/trade/stock_order');
     }
+
+    public function stockOrderReport()
+    {
+        return view('pages/admin_panel/trade/order_report');
+    }
 }

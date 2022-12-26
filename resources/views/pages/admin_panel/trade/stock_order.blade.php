@@ -11,8 +11,8 @@
                 <h2 class="text-xl font-medium items-start font-semibold text-white">All Stock Order</h2>
             </div>
         </div>
-        <div class="intro-y box col-span-12 2xl:col-span-6">
-            <div class="overflow-x-auto">
+        <div class="intro-y col-span-12 2xl:col-span-6">
+            <div class="overflow-x-auto box">
                 <table class="table mt-1">
                     <thead class="table-light">
                         <tr>
