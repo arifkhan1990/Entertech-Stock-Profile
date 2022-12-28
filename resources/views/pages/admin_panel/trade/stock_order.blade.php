@@ -51,16 +51,18 @@
                             <td class="text-center !px-[0.5rem] !py-[0.75rem]"><label class="bg-[#dd4b39] label label-danger">Pending</label></td>
                             <td class="text-center !px-[0.5rem] !py-[0.75rem]"><label class="bg-[#00a65a] label label-success">WEB</label></td>
                             <td class="text-center !px-[0.5rem] !py-[0.75rem]">
-                                <a class="flex items-center mr-3 text-[#367fa9]" href="javascript:;" data-tw-toggle="modal" data-tw-target="#change-status">
+                                <div class="flex justify-center items-center">
+                                    <a class="flex items-center mr-3 text-[#367fa9]" href="javascript:;" data-tw-toggle="modal" data-tw-target="#change-status">
                                     Change Status <i data-lucide="power" class="w-6 h-6"></i>
-                                </a>
+                                    </a>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-        <!-- BEGIN: password change Modal Content -->
+        <!-- BEGIN: status change Modal Content -->
         <div id="change-status" class="modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">

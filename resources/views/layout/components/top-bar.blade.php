@@ -3,22 +3,22 @@
     <div class="h-full flex items-center">
         <!-- BEGIN: Logo -->
         <a href="" class="logo -intro-x hidden md:flex xl:w-[180px] block">
-            <img alt="Stock Market Profile" class="logo__image w-6" src="{{ asset('build/assets/images/logo.svg') }}">
+            <img alt="Stock Market Profile" class="logo__image w-25" src="{{ asset('build/assets/images/entertech.png') }}">
             <span class="logo__text text-white text-lg ml-3">
-                Stock Profile
+
             </span>
         </a>
         <!-- END: Logo -->
         <!-- BEGIN: Breadcrumb -->
         <nav aria-label="breadcrumb" class="-intro-x h-[45px] mr-auto ml-9 flex">
             <div class="cursor-pointer menu-icon" role="button">
-                <a href="{{ route('dashboard-overview-1','layout=top-menu')}}"><i data-lucide="arrow-up" id="arrow-up"></i></a>
+                <a href="{{ route(Route::current()->getName(),'layout=top-menu')}}"><i data-lucide="arrow-up" id="arrow-up"></i></a>
 
-                <a href="{{ route('dashboard-overview-1','layout=simple-menu')}}"><i data-lucide="arrow-left" id="arrow-left"></i></a>
-                <a href="{{ route('dashboard-overview-1','layout=side-menu')}}"><i data-lucide="arrow-right" id="arrow-right"></i></a>
+                <a href="{{ route(Route::current()->getName(),'layout=simple-menu')}}"><i data-lucide="arrow-left" id="arrow-left"></i></a>
+                <a href="{{ route(Route::current()->getName(),'layout=side-menu')}}"><i data-lucide="arrow-right" id="arrow-right"></i></a>
             </div>
 
-            <div class="intro-x relative mr-3 sm:mr-6">
+            <div class="intro-x relative ml-5 mr-3 sm:mr-6">
                 <div class="search hidden sm:block">
                     <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
                     <i data-lucide="search" class="search__icon dark:text-slate-500"></i>

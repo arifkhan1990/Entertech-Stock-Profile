@@ -5,6 +5,7 @@
 @endsection
 
 @section('subcontent')
+    <?php $urlFull = \Request::fullUrl(); $layout = explode("layout=",$urlFull)[1];?>
     <div class="grid grid-cols-12 gap-6 mt-5">
         <!-- BEGIN: Profile Menu -->
         <div class="col-span-12 lg:col-span-3 2xl:col-span-3 flex lg:block flex-col-reverse">
@@ -15,7 +16,7 @@
                     </div>
                 </div>
                 <div class="p-5 border-t border-slate-200/60 dark:border-darkmode-400">
-                    <a class="flex items-center text-[16px] text-primary font-medium" href="{{ route('market-events-data')}}">
+                    <a class="flex items-center text-[16px] text-primary font-medium" href="{{ route('market-news-data') }}">
                         <i data-lucide="newspaper" class="w-4 h-4 mr-2"></i>News
                     </a>
                     <a class="flex items-center text-[16px] mt-5 active" href="{{ route('market-events-data')}}">

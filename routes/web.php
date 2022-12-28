@@ -50,6 +50,10 @@ Route::middleware('auth')->group(function() {
         Route::get('stock-order', 'stockOrder')->name('stock-order');
         Route::get('stock-order-report', 'stockOrderReport')->name('stock-order-report');
 
+        // transaction route
+        Route::get('withdraw-request', 'withdrawRequest')->name('withdraw-request');
+        Route::get('deposit-request', 'depositRequest')->name('deposit-request');
+
     });
 });
 

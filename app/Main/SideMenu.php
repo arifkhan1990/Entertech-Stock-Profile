@@ -30,7 +30,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'user-analytics',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'User Analytics'
                     ],
@@ -38,7 +38,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'user-accounts',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'User Accounts'
                     ],
@@ -46,7 +46,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'group-account',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Group Account'
                     ]
@@ -57,7 +57,7 @@ class SideMenu
                 'icon' => 'banknote',
                 'route_name' => 'market-news-data',
                 'params' => [
-                    'layout' => 'simple-menu'
+                    'layout' => 'side-menu'
                 ],
                 'title' => 'Market Data'
             ],
@@ -65,7 +65,7 @@ class SideMenu
                 'icon' => 'signal',
                 'route_name' => 'dse',
                 'params' => [
-                    'layout' => 'simple-menu'
+                    'layout' => 'side-menu'
                 ],
                 'title' => 'Circuit Breaker'
             ],
@@ -77,7 +77,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'stock-order',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Stock Order'
                     ],
@@ -85,7 +85,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'stock-order-report',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Order Report'
                     ]
@@ -97,17 +97,17 @@ class SideMenu
                 'sub_menu' => [
                     'withdraw-request' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'withdraw-request',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Withdraw Request'
                     ],
                     'deposit-request' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'deposit-request',
                         'params' => [
-                            'layout' => 'user-accounts'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Deposit Request'
                     ]
@@ -122,7 +122,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Open B.O Account'
                     ],
@@ -130,7 +130,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'New B.O Request'
                     ],
@@ -138,7 +138,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'B.O Accounts'
                     ]
@@ -152,7 +152,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Ipo Setting'
                     ],
@@ -174,7 +174,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Upload B.O Account'
                     ],
@@ -182,7 +182,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Upload Client Position'
                     ],
@@ -190,7 +190,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Upload Client Limit'
                     ],
@@ -198,7 +198,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Upload Industry Data'
                     ],
@@ -206,7 +206,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Upload Market Data'
                     ],
@@ -214,7 +214,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Download File'
                     ],
@@ -222,7 +222,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Download Database'
                     ]
@@ -232,7 +232,7 @@ class SideMenu
                 'icon' => 'banknote',
                 'route_name' => 'dashboard-overview-1',
                 'params' => [
-                    'layout' => 'simple-menu'
+                    'layout' => 'side-menu'
                 ],
                 'title' => 'Update Cash Limit'
             ],
@@ -245,7 +245,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Company Info'
                     ],
@@ -253,7 +253,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Site Setup'
                     ],
@@ -261,7 +261,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Permission'
                     ],
@@ -269,7 +269,7 @@ class SideMenu
                         'icon' => '',
                         'route_name' => 'dashboard-overview-1',
                         'params' => [
-                            'layout' => 'simple-menu'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Password Setting'
                     ]
@@ -279,7 +279,7 @@ class SideMenu
                 'icon' => 'anchor',
                 'route_name' => 'dashboard-overview-1',
                 'params' => [
-                    'layout' => 'simple-menu'
+                    'layout' => 'side-menu'
                 ],
                 'title' => 'Subscription'
             ],

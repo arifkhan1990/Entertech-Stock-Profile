@@ -1,14 +1,14 @@
 @extends('../layout/' . $layout)
 
 @section('subhead')
-    <title>Stock Order Report - Entertech</title>
+    <title>Withdraw Request - Entertech</title>
 @endsection
 
 @section('subcontent')
     <div class="grid grid-cols-12 gap-6 mt-5">
         <div class="intro-y box col-span-12 2xl:col-span-6 bg-primary">
             <div class="flex flex-row items-start p-5">
-                <h2 class="text-xl font-medium items-start font-semibold text-white">All Stock Order Report</h2>
+                <h2 class="text-xl font-medium items-start font-semibold text-white">All Withdraw Request</h2>
             </div>
         </div>
         <!-- BEGIN: HTML Table Data -->
@@ -82,45 +82,43 @@
                                         <tr>
                                             <th class="text-center !px-[0.5rem] !py-[0.75rem]">SI</th>
                                             <th class="text-left !px-[0.5rem] !py-[0.75rem]">User Name</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Order Type</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Market</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Secutiry Code</th>
                                             <th class="text-center !px-[0.5rem] !py-[0.75rem]">Client Code</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Current Rate</th>
-
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Order Rate</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">B.O Account</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Number of Share</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Total Amount</th>
+                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Mobile</th>
+                                            <th class="text-left !px-[0.5rem] !py-[0.75rem]">Bank Name</th>
+                                            <th class="text-left !px-[0.5rem] !py-[0.75rem]">Branch Name</th>
+                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Account No</th>
+                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Amount</th>
                                             <th class="text-center !px-[0.5rem] !py-[0.75rem]">Request Date</th>
                                             <th class="text-center !px-[0.5rem] !py-[0.75rem]">Status</th>
-                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">From</th>
+                                            <th class="text-center !px-[0.5rem] !py-[0.75rem]">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-hover">
                                         <tr>
                                             <td class="text-center !px-[0.5rem] !py-[0.75rem]">1</td>
                                             <td class="text-left !px-[0.5rem] !py-[0.75rem]">FAYSAL JAHANGIR </td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]"><label class="bg-[#f39c12] label label-warning">sell</label></td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem] !px-[0.5rem] !py-[0.75rem]">DSE</td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">AGNISYSL</td>
                                             <td class="text-center !px-[0.5rem] !py-[0.75rem]">7770</td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">18.8000</td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">19.0000</td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">1205590069570705</td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">10</td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">190</td>
+                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">+8801341237212</td>
+                                            <td class="text-left !px-[0.5rem] !py-[0.75rem]">SHAHJALAL ISLAMI BANK LTD</td>
+                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">MOHAKHALI</td>
+                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">0013100000061</td>
+                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">100000 TK</td>
                                             <td class="text-center !px-[0.5rem] !py-[0.75rem]">26th December 2022</td>
                                             <td class="text-center !px-[0.5rem] !py-[0.75rem]"><label class="bg-[#dd4b39] label label-danger">Pending</label></td>
-                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]"><label class="bg-[#00a65a] label label-success">WEB</label></td>
+                                            <td class="text-center !px-[0.5rem] !py-[0.75rem]">
+                                                <a class="flex items-center mr-3 text-[#367fa9]" href="javascript:;" data-tw-toggle="modal" data-tw-target="#change-status">
+                                                    Change Status <i data-lucide="power" class="w-6 h-6"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- END: HTML Table Data -->
+
     </div>
 @endsection

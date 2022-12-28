@@ -76,4 +76,14 @@ class AdminController extends Controller
     {
         return view('pages/admin_panel/trade/order_report');
     }
+
+    public function withdrawRequest()
+    {
+        return view('pages/admin_panel/transaction/withdraw_request');
+    }
+
+    public function depositRequest()
+    {
+        return view('pages/admin_panel/transaction/deposite_request');
+    }
 }
