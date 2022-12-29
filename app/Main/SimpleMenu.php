@@ -118,9 +118,9 @@ class SimpleMenu
                 'icon' => 'folder',
                 'title' => 'B.O',
                 'sub_menu' => [
-                    'oprn-bp-account' => [
+                    'open-bo-account' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'open-bo-account',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
@@ -128,7 +128,7 @@ class SimpleMenu
                     ],
                     'new-bo-request' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'new-bo-request',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
@@ -136,7 +136,7 @@ class SimpleMenu
                     ],
                     'bo_accounts' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'bo-account',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],

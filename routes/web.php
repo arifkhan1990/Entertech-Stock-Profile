@@ -54,6 +54,11 @@ Route::middleware('auth')->group(function() {
         Route::get('withdraw-request', 'withdrawRequest')->name('withdraw-request');
         Route::get('deposit-request', 'depositRequest')->name('deposit-request');
 
+        // B.O route
+        Route::get('bo-account', 'boAccount')->name('bo-account');
+        Route::get('new-bo-request', 'newBoRequest')->name('new-bo-request');
+        Route::get('open-bo-account', 'OpenBoAccount')->name('open-bo-account');
+
     });
 });
 

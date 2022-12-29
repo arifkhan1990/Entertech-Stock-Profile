@@ -86,4 +86,19 @@ class AdminController extends Controller
     {
         return view('pages/admin_panel/transaction/deposite_request');
     }
+
+    public function boAccount()
+    {
+        return view('pages/admin_panel/bo/bo_account');
+    }
+
+    public function newBoRequest()
+    {
+        return view('pages/admin_panel/bo/new_bo_request');
+    }
+
+    public function openBoAccount()
+    {
+        return view('pages/admin_panel/bo/open_bo_account');
+    }
 }

@@ -118,9 +118,9 @@ class TopMenu
                 'icon' => 'folder',
                 'title' => 'B.O',
                 'sub_menu' => [
-                    'oprn-bp-account' => [
+                    'open-bo-account' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'open-bo-account',
                         'params' => [
                             'layout' => 'top-menu'
                         ],
@@ -128,7 +128,7 @@ class TopMenu
                     ],
                     'new-bo-request' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'new-bo-request',
                         'params' => [
                             'layout' => 'top-menu'
                         ],
@@ -136,7 +136,7 @@ class TopMenu
                     ],
                     'bo_accounts' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'bo-account',
                         'params' => [
                             'layout' => 'top-menu'
                         ],
