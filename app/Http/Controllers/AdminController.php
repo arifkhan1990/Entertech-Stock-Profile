@@ -101,4 +101,39 @@ class AdminController extends Controller
     {
         return view('pages/admin_panel/bo/open_bo_account');
     }
+
+    public function ipoSetting()
+    {
+        return view('pages/admin_panel/ipo/ipo_setting');
+    }
+
+    public function ipoApplication()
+    {
+        return view('pages/admin_panel/ipo/ipo_application');
+    }
+
+    public function uploadBoAccount()
+    {
+        return view('pages/admin_panel/upload_file/bo_account');
+    }
+
+    public function uploadClientPosition()
+    {
+        return view('pages/admin_panel/upload_file/client_position');
+    }
+
+    public function uploadClientLimit()
+    {
+        return view('pages/admin_panel/upload_file/client_limit');
+    }
+
+    public function uploadMarketData()
+    {
+        return view('pages/admin_panel/upload_file/market_data');
+    }
+
+    public function uploadIndustryData()
+    {
+        return view('pages/admin_panel/upload_file/industry_data');
+    }
 }

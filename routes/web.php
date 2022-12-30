@@ -59,6 +59,16 @@ Route::middleware('auth')->group(function() {
         Route::get('new-bo-request', 'newBoRequest')->name('new-bo-request');
         Route::get('open-bo-account', 'OpenBoAccount')->name('open-bo-account');
 
+        // Ipo route
+        Route::get('ipo-setting', 'ipoSetting')->name('ipo-setting');
+        Route::get('ipo-application', 'ipoApplication')->name('ipo-application');
+
+        // Upload file route
+        Route::get('upload-bo-account', 'uploadBoAccount')->name('upload-bo-account');
+        Route::get('upload-client-position', 'uploadClientPosition')->name('upload-client-position');
+        Route::get('upload-client-limit', 'uploadClientLimit')->name('upload-client-limit');
+        Route::get('upload-market-data', 'uploadMarketData')->name('upload-market-data');
+        Route::get('upload-industry-data', 'uploadIndustryData')->name('upload-industry-data');
     });
 });
 

@@ -19,28 +19,26 @@
             </div>
 
             <div class="intro-x relative ml-5 mr-3 sm:mr-6">
-                <div class="search hidden sm:block">
-                    <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+                <div class="search hidden sm:block w-[400px]">
+                    <select data-placeholder="Select Company code" class="search__input form-control border-transparent tom-select !w-[400px]">
+                            <option value=""></option>
+                            <option value="1">Leonardo DiCaprio</option>
+                            <option value="2">Johnny Deep</option>
+                            <option value="3">Robert Downey, Jr</option>
+                            <option value="4">Samuel L. Jackson</option>
+                            <option value="5">Morgan Freeman</option>
+                    </select>
                     <i data-lucide="search" class="search__icon dark:text-slate-500"></i>
                 </div>
                 <a class="notification notification--light sm:hidden" href="">
                     <i data-lucide="search" class="notification__icon dark:text-slate-500"></i>
                 </a>
-                <div class="search-result">
+{{--                 <div class="search-result">
                     <div class="search-result__content">
 
-                        @foreach (array_slice($fakers, 0, 4) as $faker)
-                            <a href="" class="flex items-center mt-2">
-                                <div class="w-8 h-8 image-fit">
-                                    <img alt="Stock Market Profile" class="rounded-full" src="{{ asset('build/assets/images/' . $faker['images'][0]) }}">
-                                    <div class="ml-3">{{ $faker['products'][0]['name'] }}</div>
-                                </div>
-                                <div class="ml-3">{{ $faker['products'][0]['name'] }}</div>
-                                <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">{{ $faker['products'][0]['category'] }}</div>
-                            </a>
-                        @endforeach
+
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- <ol class="breadcrumb breadcrumb-light">
                 <li class="breadcrumb-item"><a href="#">Application</a></li>

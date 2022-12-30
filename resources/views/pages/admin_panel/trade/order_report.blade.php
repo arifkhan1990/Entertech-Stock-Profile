@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="overflow-x-auto scrollbar-hidden">
+            <div class="overflow-x-auto scrollbar-hidden mt-8">
                 <div class="mt-5 table-report table-report--tabulator tabulator" role="grid" tabulator-layout="fitColumns">
                     <div class="" style="padding-right: 0px; margin-left: 0px;">
                         <div class="" style="margin-left: 0px;">

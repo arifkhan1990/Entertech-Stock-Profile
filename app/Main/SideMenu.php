@@ -150,7 +150,7 @@ class SideMenu
                 'sub_menu' => [
                     'ipo-setting' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'ipo-setting',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -158,9 +158,9 @@ class SideMenu
                     ],
                     'ipo-application' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'ipo-application',
                         'params' => [
-                            'layout' => 'user-accounts'
+                            'layout' => 'side-menu'
                         ],
                         'title' => 'Ipo Application'
                     ]
@@ -172,7 +172,7 @@ class SideMenu
                 'sub_menu' => [
                     'upload-bo-account' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'upload-bo-account',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -180,7 +180,7 @@ class SideMenu
                     ],
                     'upload-client-position' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'upload-client-position',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -188,7 +188,7 @@ class SideMenu
                     ],
                     'upload-client-limit' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'upload-client-limit',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -196,7 +196,7 @@ class SideMenu
                     ],
                     'upload-industry-data' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'upload-industry-data',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -204,7 +204,7 @@ class SideMenu
                     ],
                     'upload-market-data' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'upload-market-data',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
