@@ -69,6 +69,27 @@ Route::middleware('auth')->group(function() {
         Route::get('upload-client-limit', 'uploadClientLimit')->name('upload-client-limit');
         Route::get('upload-market-data', 'uploadMarketData')->name('upload-market-data');
         Route::get('upload-industry-data', 'uploadIndustryData')->name('upload-industry-data');
+
+        // Download route
+        Route::get('download-upload-file','downloadUploadFile')->name('download-upload-file');
+        Route::get('download-database','downloadDatabase')->name('download-database');
+
+        // Update cash limit
+        Route::get('update-cash-limit','updateCashLimit')->name('update-cash-limit');
+
+        // Subscriptions List route
+        Route::get('subscription-list','subscriptionlList')->name('subscription-list');
+
+        // Setting route
+        Route::get('company-setup','companySetup')->name('company-setup');
+        Route::get('password-policy','passwordPolicy')->name('password-policy');
+
+        // Site setup route
+        Route::get('menus','menus')->name('menus');
+        Route::get('sub-menus','subMenus')->name('sub-menus');
+        Route::get('permissions','permissions')->name('permissions');
+        Route::get('app-master-data','appMasterData')->name('app-master-data');
+        Route::get('footer-data','footerData')->name('footer-data');
     });
 });
 

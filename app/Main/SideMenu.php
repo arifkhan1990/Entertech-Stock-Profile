@@ -20,7 +20,6 @@ class SideMenu
                 'params' => [
                     'layout' => 'side-menu',
                 ],
-                'title' => 'Dashboard'
             ],
             'user' => [
                 'icon' => 'users',
@@ -52,7 +51,7 @@ class SideMenu
                     ]
                 ]
             ],
-             'devider',
+            'devider',
             'market-data' => [
                 'icon' => 'banknote',
                 'route_name' => 'market-news-data',
@@ -212,7 +211,7 @@ class SideMenu
                     ],
                     'download-upload-file' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'download-upload-file',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -220,7 +219,7 @@ class SideMenu
                     ],
                     'download-database' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'download-database',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -230,7 +229,7 @@ class SideMenu
             ],
             'update-cash-limit' => [
                 'icon' => 'banknote',
-                'route_name' => 'dashboard-overview-1',
+                'route_name' => 'update-cash-limit',
                 'params' => [
                     'layout' => 'side-menu'
                 ],
@@ -243,7 +242,7 @@ class SideMenu
                 'sub_menu' => [
                     'company-info' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'company-setup',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -251,7 +250,7 @@ class SideMenu
                     ],
                     'site-setup' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'menus',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
@@ -265,19 +264,19 @@ class SideMenu
                         ],
                         'title' => 'Permission'
                     ],
-                     'Password Setting' => [
+                     'password-policy' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'password-policy',
                         'params' => [
                             'layout' => 'side-menu'
                         ],
-                        'title' => 'Password Setting'
+                        'title' => 'Password Policy'
                     ]
                 ]
             ],
             'subscription' => [
                 'icon' => 'anchor',
-                'route_name' => 'dashboard-overview-1',
+                'route_name' => 'subscription-list',
                 'params' => [
                     'layout' => 'side-menu'
                 ],

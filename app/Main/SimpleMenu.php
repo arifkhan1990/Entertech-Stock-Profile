@@ -212,7 +212,7 @@ class SimpleMenu
                     ],
                     'download-upload-file' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'download-upload-file',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
@@ -220,7 +220,7 @@ class SimpleMenu
                     ],
                     'download-database' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'download-database',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
@@ -230,7 +230,7 @@ class SimpleMenu
             ],
             'update-cash-limit' => [
                 'icon' => 'banknote',
-                'route_name' => 'dashboard-overview-1',
+                'route_name' => 'update-cash-limit',
                 'params' => [
                     'layout' => 'simple-menu'
                 ],
@@ -243,7 +243,7 @@ class SimpleMenu
                 'sub_menu' => [
                     'company-info' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'company-setup',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
@@ -251,7 +251,7 @@ class SimpleMenu
                     ],
                     'site-setup' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'menus',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
@@ -265,19 +265,19 @@ class SimpleMenu
                         ],
                         'title' => 'Permission'
                     ],
-                     'Password Setting' => [
+                     'password-policy' => [
                         'icon' => '',
-                        'route_name' => 'dashboard-overview-1',
+                        'route_name' => 'password-policy',
                         'params' => [
                             'layout' => 'simple-menu'
                         ],
-                        'title' => 'Password Setting'
+                        'title' => 'Password Policy'
                     ]
                 ]
             ],
             'subscription' => [
                 'icon' => 'anchor',
-                'route_name' => 'dashboard-overview-1',
+                'route_name' => 'subscription-list',
                 'params' => [
                     'layout' => 'simple-menu'
                 ],

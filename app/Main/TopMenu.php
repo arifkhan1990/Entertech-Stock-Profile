@@ -143,7 +143,67 @@ class TopMenu
                         'title' => 'B.O Accounts'
                     ]
                 ]
-            ]
+            ],
+            'IPO' => [
+                'icon' => 'codesandbox',
+                'title' => 'IPO',
+                'sub_menu' => [
+                    'ipo-setting' => [
+                        'icon' => '',
+                        'route_name' => 'ipo-setting',
+                        'params' => [
+                            'layout' => 'top-menu'
+                        ],
+                        'title' => 'Ipo Setting'
+                    ],
+                    'ipo-application' => [
+                        'icon' => '',
+                        'route_name' => 'ipo-application',
+                        'params' => [
+                            'layout' => 'top-menu'
+                        ],
+                        'title' => 'Ipo Application'
+                    ]
+                ]
+            ],
+            'settings' => [
+                'icon' => 'settings',
+                'title' => 'Settings',
+                'sub_menu' => [
+                    'company-info' => [
+                        'icon' => '',
+                        'route_name' => 'company-setup',
+                        'params' => [
+                            'layout' => 'top-menu'
+                        ],
+                        'title' => 'Company Info'
+                    ],
+                    'site-setup' => [
+                        'icon' => '',
+                        'route_name' => 'menus',
+                        'params' => [
+                            'layout' => 'top-menu'
+                        ],
+                        'title' => 'Site Setup'
+                    ],
+                    'permissions' => [
+                        'icon' => '',
+                        'route_name' => 'dashboard-overview-1',
+                        'params' => [
+                            'layout' => 'top-menu'
+                        ],
+                        'title' => 'Permission'
+                    ],
+                     'password-policy' => [
+                        'icon' => '',
+                        'route_name' => 'password-policy',
+                        'params' => [
+                            'layout' => 'top-menu'
+                        ],
+                        'title' => 'Password Policy'
+                    ]
+                ]
+            ],
         ];
     }
 }

@@ -7,7 +7,7 @@
 @section('content')
     @include('../layout/components/mobile-menu')
     @include('../layout/components/top-bar')
-    <div class="flex overflow-hidden">
+    <div class="flex overflow-hidden h-screen">
         <!-- BEGIN: Side Menu -->
         <nav class="side-nav">
             <ul>
@@ -76,4 +76,5 @@
         </div>
         <!-- END: Content -->
     </div>
+     @include('../layout/components/footer')
 @endsection

@@ -134,6 +134,61 @@ class AdminController extends Controller
 
     public function uploadIndustryData()
     {
-        return view('pages/admin_panel/upload_file/industry_data');
+        return view('pages/admin_panel/download_file/industry_data');
+    }
+
+    public function downloadUploadFile()
+    {
+        return view('pages/admin_panel/download_file/download_upload_file');
+    }
+
+    public function downloadDatabase()
+    {
+        return view('pages/admin_panel/download_file/download_database');
+    }
+
+    public function updateCashLimit()
+    {
+        return view('pages/admin_panel/cash_limit/update_cash_limit');
+    }
+
+    public function subscriptionlList()
+    {
+        return view('pages/admin_panel/subscription/subscriptionl_list');
+    }
+
+    public function companySetup()
+    {
+        return view('pages/admin_panel/settings/company_setup');
+    }
+
+    public function passwordPolicy()
+    {
+        return view('pages/admin_panel/settings/password_policy');
+    }
+
+    public function menus()
+    {
+        return view('pages/admin_panel/site_setup/menus');
+    }
+
+    public function subMenus()
+    {
+        return view('pages/admin_panel/site_setup/sub_menus');
+    }
+
+    public function permission()
+    {
+        return view('pages/admin_panel/site_setup/permission');
+    }
+
+    public function appMasterData()
+    {
+        return view('pages/admin_panel/site_setup/app_master_data');
+    }
+
+    public function footerData()
+    {
+        return view('pages/admin_panel/site_setup/footer_data');
     }
 }

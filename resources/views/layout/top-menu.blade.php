@@ -6,7 +6,7 @@
 
 @section('content')
     @include('../layout/components/mobile-menu')
-    @include('../layout/components/top-bar', ['class' => 'top-bar-boxed--top-menu'])
+    @include('../layout/components/top-bar', ['class' => 'top-bar-boxed--top-menu h-screen'])
     <!-- BEGIN: Top Menu -->
     <nav class="top-nav">
         <ul>
@@ -66,4 +66,6 @@
         @yield('subcontent')
     </div>
     <!-- END: Content -->
+    @include('../layout/components/footer')
+
 @endsection

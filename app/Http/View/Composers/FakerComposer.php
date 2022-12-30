@@ -218,16 +218,16 @@ class FakerComposer
     public function fakeFiles()
     {
         $files = collect([
-            [ 'file_name' => 'Celine Dion - Ashes.mp4', 'type' => 'MP4', 'size' => '20 MB' ],
-            [ 'file_name' => 'Laravel 7', 'type' => 'Empty Folder', 'size' => '120 MB' ],
-            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1.2 MB' ],
-            [ 'file_name' => 'Repository', 'type' => 'Folder', 'size' => '20 KB' ],
-            [ 'file_name' => 'Resources.txt', 'type' => 'TXT', 'size' => '2.2 MB' ],
-            [ 'file_name' => 'Routes.php', 'type' => 'PHP', 'size' => '1 KB' ],
-            [ 'file_name' => 'Dota 2', 'type' => 'Folder', 'size' => '112 GB' ],
-            [ 'file_name' => 'Documentation', 'type' => 'Empty Folder', 'size' => '4 MB' ],
-            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1.4 MB' ],
-            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1 MB' ]
+            [ 'file_name' => 'Celine Dion - Ashes.mp4', 'type' => 'MP4', 'size' => '20 MB','date'=>'26th December 2022'],
+            [ 'file_name' => 'Laravel 7', 'type' => 'Empty Folder', 'size' => '120 MB', 'date'=>'29th December 2022' ],
+            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1.2 MB', 'date'=>'21th December 2022' ],
+            [ 'file_name' => 'Repository', 'type' => 'Folder', 'size' => '20 KB', 'date'=>'26th December 2022' ],
+            [ 'file_name' => 'Resources.txt', 'type' => 'TXT', 'size' => '2.2 MB', 'date'=>'2nd December 2022' ],
+            [ 'file_name' => 'Routes.php', 'type' => 'PHP', 'size' => '1 KB', 'date'=>'13th December 2022' ],
+            [ 'file_name' => 'Dota 2', 'type' => 'Folder', 'size' => '112 GB', 'date'=>'26th November 2021' ],
+            [ 'file_name' => 'Documentation', 'type' => 'Empty Folder', 'size' => '4 MB', 'date'=>'17th December 2019' ],
+            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1.4 MB', 'date'=>'07th August 2022' ],
+            [ 'file_name' => $this->fakeImages()->first(), 'type' => 'Image', 'size' => '1 MB', 'date'=>'11th September 2021' ]
         ]);
 
         return $files->shuffle();
