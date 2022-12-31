@@ -3,23 +3,30 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use DB;
+use Auth;
 
 class AdminController extends Controller
 {
     public function dashboard()
     {
-        return view('pages/admin_panel/dashboard', [
+        $card_data = DB::select("SELECT (SELECT COUNT(*) FROM users WHERE role=1) AS TOT_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Free') AS FREE_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Premium') AS PREMIUM_USER, (SELECT COUNT(*) FROM users WHERE role=0) AS ADMIN_USER FROM users LIMIT 1")[0];
+        // dd(Auth::user()->name);
+        return view('pages/admin_panel/dashboard',['card_data'=>$card_data]);
+        // [
             // Specify the base layout.
             // Eg: 'side-menu', 'simple-menu', 'top-menu', 'login'
             // The default value is 'side-menu'
 
             // 'layout' => 'side-menu'
-        ]);
+        //]);
     }
 
     public function userAnalytics()
     {
-        return view('pages/admin_panel/user_activity/user_analytics');
+         $card_data = DB::select("SELECT (SELECT COUNT(*) FROM users WHERE role=1) AS TOT_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Free') AS FREE_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Premium') AS PREMIUM_USER, (SELECT COUNT(*) FROM users WHERE role=0) AS ADMIN_USER FROM users LIMIT 1")[0];
+        return view('pages/admin_panel/user_activity/user_analytics',['card_data'=>$card_data]);
     }
 
     public function userAccounts()

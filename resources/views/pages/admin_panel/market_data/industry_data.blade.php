@@ -103,7 +103,7 @@
                 <!-- END: Daily Sales -->
 
             </div>
-                        <!-- BEGIN: delete group account confirmation modal Content -->
+            <!-- BEGIN: delete group account confirmation modal Content -->
             <div id="delete-modal" class="modal" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">

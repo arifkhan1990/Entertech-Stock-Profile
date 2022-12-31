@@ -7,7 +7,7 @@
 @section('content')
     @include('../layout/components/mobile-menu')
     @include('../layout/components/top-bar', ['class' => 'top-bar-boxed--simple-menu'])
-    <div class="flex overflow-hidden flex items-center justify-center h-screen">
+    <div class="flex overflow-hidden h-max">
         <!-- BEGIN: Simple Menu -->
         <nav class="side-nav side-nav--simple">
             <ul>

@@ -6,7 +6,7 @@
 
 @section('content')
     @include('../layout/components/mobile-menu')
-    @include('../layout/components/top-bar', ['class' => 'top-bar-boxed--top-menu h-screen'])
+    @include('../layout/components/top-bar', ['class' => 'top-bar-boxed--top-menu h-max'])
     <!-- BEGIN: Top Menu -->
     <nav class="top-nav">
         <ul>

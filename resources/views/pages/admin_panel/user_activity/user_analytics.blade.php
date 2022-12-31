@@ -22,11 +22,11 @@
                 </div>
 
                 <div class="col-span-12 mt-3">
-                    <div class="grid grid-cols-12 gap-6 mt-2">
+                    <div class="grid grid-cols-12 gap-6 mt-0">
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6 text-[red]">132</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->TOT_USER}}</div>
                                     <div class="text-base text-slate-500 mt-1">TOTAL USER</div>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6">111</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->FREE_USER}}</div>
                                     <div class="text-base text-slate-500 mt-1">FREE USER</div>
                                 </div>
                             </div>
@@ -42,15 +42,15 @@
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6">11</div>
-                                    <div class="text-base text-slate-500 mt-1">PRIMIUM USER</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->PREMIUM_USER}}</div>
+                                    <div class="text-base text-slate-500 mt-1">PREMIUM USER</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6">5</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->ADMIN_USER}}</div>
                                     <div class="text-base text-slate-500 mt-1">ADMIN USER</div>
                                 </div>
                             </div>

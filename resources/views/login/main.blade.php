@@ -1,7 +1,7 @@
 @extends('../layout/' . $layout)
 
 @section('head')
-    <title>Login - Enigma - Tailwind HTML Admin Template</title>
+    <title>Login - Entertech - Stock Market Profile</title>
 @endsection
 
 @section('content')
@@ -9,14 +9,14 @@
         <div class="block xl:grid grid-cols-2 gap-4">
             <!-- BEGIN: Login Info -->
             <div class="hidden xl:flex flex-col min-h-screen">
-                <a href="" class="-intro-x flex items-center pt-5">
-                    <img alt="Icewall Tailwind HTML Admin Template" class="w-6" src="{{ asset('build/assets/images/logo.svg') }}">
+                <a href="" class="-intro-x flex items-center pt-5  mb-5">
+                    <img alt="Entertech" class="w-25" src="{{ asset('build/assets/images/entertech.png') }}">
                     <span class="text-white text-lg ml-3">
-                        Enigma
+                        STOCK MARKET PROFILE
                     </span>
                 </a>
                 <div class="my-auto">
-                    <img alt="Icewall Tailwind HTML Admin Template" class="-intro-x w-1/2 -mt-16" src="{{ asset('build/assets/images/illustration.svg') }}">
+                    <img alt="Entertech" class="-intro-x w-1/2 -mt-16" src="{{ asset('build/assets/images/illustration.svg') }}">
                     <div class="-intro-x text-white font-medium text-4xl leading-tight mt-10">A few more clicks to <br> sign in to your account.</div>
                     <div class="-intro-x mt-5 text-lg text-white text-opacity-70 dark:text-slate-400">Manage all your e-commerce accounts in one place</div>
                 </div>
@@ -29,9 +29,10 @@
                     <div class="intro-x mt-2 text-slate-400 xl:hidden text-center">A few more clicks to sign in to your account. Manage all your e-commerce accounts in one place</div>
                     <div class="intro-x mt-8">
                         <form id="login-form">
-                            <input id="email" type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Email" value="midone@left4code.com">
+                            {{ csrf_field() }}
+                            <input id="email" type="text" class="intro-x login__input form-control py-3 px-4 block" placeholder="Email" value="admin@gmail.com">
                             <div id="error-email" class="login__input-error text-danger mt-2"></div>
-                            <input id="password" type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Password" value="password">
+                            <input id="password" type="password" class="intro-x login__input form-control py-3 px-4 block mt-4" placeholder="Password" value="123456">
                             <div id="error-password" class="login__input-error text-danger mt-2"></div>
                         </form>
                     </div>
@@ -67,17 +68,19 @@
                 // Post form
                 let email = $('#email').val()
                 let password = $('#password').val()
-
+                let token = "{{ csrf_token() }}";
+                // console.log({email}, {password});
                 // Loading state
                 $('#btn-login').html('<i data-loading-icon="oval" data-color="white" class="w-5 h-5 mx-auto"></i>')
                 tailwind.svgLoader()
                 await helper.delay(1500)
 
                 axios.post(`login`, {
+                    _token: token,
                     email: email,
                     password: password
                 }).then(res => {
-                    location.href = '/'
+                    location.href = 'admin-dashboard'
                 }).catch(err => {
                     $('#btn-login').html('Login')
                     if (err.response.data.message != 'Wrong email or password.') {

@@ -9,12 +9,12 @@
         <div class="col-span-12 2xl:col-span-9">
             <div class="grid grid-cols-12 gap-6">
                 <!-- BEGIN: General Report -->
-                <div class="col-span-12 mt-8">
+                <div class="col-span-12 mt-3">
                     <div class="grid grid-cols-12 gap-6 mt-5">
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6 text-[red]">132</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->TOT_USER}}</div>
                                     <div class="text-base text-slate-500 mt-1">TOTAL USER</div>
                                 </div>
                             </div>
@@ -22,7 +22,7 @@
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6">111</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->FREE_USER}}</div>
                                     <div class="text-base text-slate-500 mt-1">FREE USER</div>
                                 </div>
                             </div>
@@ -30,15 +30,15 @@
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6">11</div>
-                                    <div class="text-base text-slate-500 mt-1">PRIMIUM USER</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->PREMIUM_USER}}</div>
+                                    <div class="text-base text-slate-500 mt-1">PREMIUM USER</div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                             <div class="report-box zoom-in">
                                 <div class="box p-5 text-center">
-                                    <div class="text-3xl font-medium leading-8 mt-6">5</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6 text-primary">{{ $card_data->ADMIN_USER}}</div>
                                     <div class="text-base text-slate-500 mt-1">ADMIN USER</div>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                 </div>
                 <!-- END: General Report -->
                 <!-- BEGIN: Sales Report -->
-                <div class="col-span-12 lg:col-span-6 mt-8">
+                <div class="col-span-12 lg:col-span-6 mt-3">
                     <div class="intro-y box p-5 mt-12 sm:mt-5">
                         <div class="flex flex-col md:flex-row md:items-center">
                             <div class="flex">
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <!-- END: Sales Report -->
-                <div class="col-span-12 lg:col-span-6 mt-8">
+                <div class="col-span-12 lg:col-span-6 mt-3">
                     <div class="intro-y box p-5 mt-12 sm:mt-5">
                         <div class="flex flex-col md:flex-row md:items-center">
                             <div class="flex">
