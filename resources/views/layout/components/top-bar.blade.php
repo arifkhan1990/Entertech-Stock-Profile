@@ -66,7 +66,7 @@
                 <ul class="dropdown-content bg-primary/80 before:block before:absolute before:bg-black before:inset-0 before:rounded-md before:z-[-1] text-white">
                     <li class="p-2">
                         <div class="font-medium">{{ Auth::user()->name }}</div>
-                        <div class="text-xs text-white/60 mt-0.5 dark:text-slate-500">Client code: {{ Auth::user()->client_code }}</div>
+                        <div class="text-xs text-white/60 mt-0.5 dark:text-slate-500">Client code : {{ Auth::user()->client_code }}</div>
                     </li>
                     <li><hr class="dropdown-divider border-white/[0.08]"></li>
                     <li>
@@ -81,13 +81,13 @@
         <div class="intro-x dropdown mr-4 sm:mr-6">
             <div class="dropdown-toggle cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown">
                 <div class="font-medium ml-2 text-white">{{ Auth::user()->name }}</div>
-                <div class="ml-2 text-xs text-white/60 mt-0.5 dark:text-slate-500">Client code: {{ Auth::user()->client_code }}</div>
+                <div class="ml-2 text-xs text-white/60 mt-0.5 dark:text-slate-500">Client code : {{ Auth::user()->client_code }}</div>
             </div>
             <div class="dropdown-menu w-56">
                 <ul class="dropdown-content bg-primary/80 before:block before:absolute before:bg-black before:inset-0 before:rounded-md before:z-[-1] text-white">
                     <li class="p-2">
                         <div class="font-medium">{{ Auth::user()->name }}</div>
-                        <div class="text-xs text-white/60 mt-0.5 dark:text-slate-500">Client code: {{ Auth::user()->client_code }}</div>
+                        <div class="text-xs text-white/60 mt-0.5 dark:text-slate-500">Client code : {{ Auth::user()->client_code }}</div>
                     </li>
                     <li><hr class="dropdown-divider border-white/[0.08]"></li>
                     <li>

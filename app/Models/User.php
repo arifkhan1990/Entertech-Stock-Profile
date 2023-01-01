@@ -18,9 +18,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        'name', 'email', 'organization', 'mobile', 'password','email_token','verified'
     ];
 
     /**
@@ -47,7 +45,7 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $appends = ['photo'];
+    // protected $appends = ['photo'];
 
     /**
      * The getter that return accessible URL for user photo.

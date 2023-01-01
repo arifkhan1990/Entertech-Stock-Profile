@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
 use DB;
 use Auth;
 
@@ -25,8 +26,11 @@ class AdminController extends Controller
 
     public function userAnalytics()
     {
-         $card_data = DB::select("SELECT (SELECT COUNT(*) FROM users WHERE role=1) AS TOT_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Free') AS FREE_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Premium') AS PREMIUM_USER, (SELECT COUNT(*) FROM users WHERE role=0) AS ADMIN_USER FROM users LIMIT 1")[0];
-        return view('pages/admin_panel/user_activity/user_analytics',['card_data'=>$card_data]);
+        $data = [];
+        $data['card_data'] = DB::select("SELECT (SELECT COUNT(*) FROM users WHERE role=1) AS TOT_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Free') AS FREE_USER, (SELECT COUNT(*) FROM users WHERE role=1 AND user_type='Premium') AS PREMIUM_USER, (SELECT COUNT(*) FROM users WHERE role=0) AS ADMIN_USER FROM users LIMIT 1")[0];
+        $data['permissions'] = DB::select("SELECT * FROM permission");
+        $data['get_data'] = User::where('role',0)->where('id','!=', 40)->paginate(5);
+        return view('pages/admin_panel/user_activity/user_analytics',$data);
     }
 
     public function userAccounts()

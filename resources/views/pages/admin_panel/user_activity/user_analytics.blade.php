@@ -76,7 +76,7 @@
                             <tr>
                                 <th class="text-center whitespace-nowrap">SI</th>
                                 <th class="whitespace-nowrap">IMAGES</th>
-                                <th class="whitespace-nowrap text-center">USER NAME</th>
+                                <th class="whitespace-nowrap text-left">USER NAME</th>
                                 <th class="text-center whitespace-nowrap">USER TYPE</th>
                                 <th class="text-center whitespace-nowrap">EMAIL ADDRESS</th>
                                 <th class="text-center whitespace-nowrap">CONTACT NUMBER</th>
@@ -85,27 +85,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach (array_slice($fakers, 0, 9)  as $key => $faker)
+                            @php
+                                $si=1;
+                            @endphp
+                            @foreach ($get_data as $key => $val)
                                 <tr class="intro-x">
-                                    <td class="text-center">{{ $key + 1 }}</td>
+                                    <td class="text-center">{{ $si }}</td>
                                     <td class="w-25">
                                         <div class="flex">
                                             <div class="w-10 h-10 image-fit zoom-in">
-                                                <img alt="Entertech - Stock Profile" class="tooltip rounded-5" src="{{ asset('build/assets/images/' . $faker['images'][0]) }}" title="Uploaded at {{ $faker['dates'][0] }}">
+                                                <img alt="Entertech - Stock Profile" class="tooltip rounded-5" src="{{ asset('build/assets/images/profile-1.jpg') }}" title="{{ $val->name }}">
                                             </div>
-{{--                                             <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                                <img alt="Entertech - Stock Profile" class="tooltip rounded-full" src="{{ asset('build/assets/images/' . $faker['images'][1]) }}" title="Uploaded at {{ $faker['dates'][0] }}">
-                                            </div>
-                                            <div class="w-10 h-10 image-fit zoom-in -ml-5">
-                                                <img alt="Entertech - Stock Profile" class="tooltip rounded-full" src="{{ asset('build/assets/images/' . $faker['images'][2]) }}" title="Uploaded at {{ $faker['dates'][0] }}">
-                                            </div> --}}
                                         </div>
                                     </td>
-                                    <td class="text-center">{{ $faker['users'][0]['name'] }}</td>
-                                    <td class="text-center">{{ $faker['userType'][0] }}</td>
-                                    <td class="text-center">{{ $faker['users'][0]['email'] }}</td>
-                                    <td class="text-center">{{ $faker['phoneNumber'][0] }}</td>
-                                    <td class="text-center">{{ $faker['dates'][0] }}</td>
+                                    <td class="text-left">{{ $val->name }}</td>
+                                    <td class="text-center ">{{ $val->user_type }}</td>
+                                    <td class="text-center">{{ $val->email }}</td>
+                                    <td class="text-center">{{ $val->mobile }}</td>
+                                    <td class="text-center">{{ \Carbon\Carbon::createFromFormat('Y-m-d',  $val->joined_date)->format('d F Y') }}</td>
     {{--                                 <td class="w-40">
                                         <div class="flex items-center justify-center {{ $faker['true_false'][0] ? 'text-success' : 'text-danger' }}">
                                             <i data-lucide="check-square" class="w-4 h-4 mr-2"></i> {{ $faker['true_false'][0] ? 'Active' : 'Inactive' }}
@@ -122,60 +119,17 @@
                                         </div>
                                     </td>
                                 </tr>
+                                @php
+                                   $si += 1;
+                                @endphp
                             @endforeach
                         </tbody>
                     </table>
+                    <div class="mt-3">
+                        {{ $get_data->links('pagination::tailwind')}}
+                    </div>
                 </div>
                 <!-- END: Data List -->
-                <!-- BEGIN: Pagination -->
-                <div class="intro-y col-span-12 flex flex-wrap sm:flex-row sm:flex-nowrap items-center">
-                    <nav class="w-full sm:w-auto sm:mr-auto">
-                        <ul class="pagination">
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="w-4 h-4" data-lucide="chevrons-left"></i>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="w-4 h-4" data-lucide="chevron-left"></i>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">...</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">1</a>
-                            </li>
-                            <li class="page-item active">
-                                <a class="page-link" href="#">2</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">3</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">...</a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="w-4 h-4" data-lucide="chevron-right"></i>
-                                </a>
-                            </li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="w-4 h-4" data-lucide="chevrons-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <select class="w-20 form-select box mt-3 sm:mt-0">
-                        <option>10</option>
-                        <option>25</option>
-                        <option>35</option>
-                        <option>50</option>
-                    </select>
-                </div>
-                <!-- END: Pagination -->
             </div>
             <div id="delete-confirmation-modal" class="modal" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog">
@@ -195,5 +149,18 @@
                 </div>
             </div>
         </div>
+
+        <!-- BEGIN: Notification Content -->
+        <div id="delete-notification-content" class="toastify-content hidden flex">
+            <i class="text-success" data-lucide="check-circle"></i>
+            <div class="ml-4 mr-4">
+                <div class="font-medium">User Info Deleted!</div>
+                <div class="text-slate-500 mt-1">The message will be sent in 5 minutes.</div>
+            </div>
+        </div>
+        <!-- END: Notification Content -->
+        <!-- BEGIN: Notification Toggle -->
+        <button id="success-notification-toggle" class="btn btn-primary">Show Notification</button>
+        <!-- END: Notification Toggle -->
     </div>
 @endsection
